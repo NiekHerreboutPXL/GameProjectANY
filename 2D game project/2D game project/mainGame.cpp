@@ -20,25 +20,63 @@ std::map<int, std::string> getChoices() {
 
 
 // logica voor computer keuze
-void randomComputerChoice() {
-
-    std::srand(static_cast<unsigned>(std::time(0)));
+std::string randomComputerChoice() {
     int randomNumber = generateRandomNumber(1, 3);
-
     std::map<int, std::string> choices = getChoices();
-
-    std::cout << "computer choice: " << choices[randomNumber] << "\n";
+    return choices[randomNumber];
+}
+// logica voor player keuze
+std::string playerChoice() {
+    std::string player;
+    std::cout << "Your choice (steen, papier, schaar): ";
+    std::cin >> player;
+    return player;
 }
 
-void playerChoice() {
-    std::string player;
-    std::map<int, std::string> choices = getChoices();
-    std::cout<<"your choice: ", std::cin >> player;
+void determineWinner(const std::string& player, const std::string& computer) {
 
+    if (player == computer) {
+        std::cout << "It's a tie! You both chose " << player << ".\n";
+    }
+    else if ((player == "steen" && computer == "schaar") ||
+        (player == "papier" && computer == "steen") ||
+        (player == "schaar" && computer == "papier")) {
+        std::cout << "Computer choice: " << computer << "\n";
+        std::cout << "You win! " << player << " beats " << computer << ".\n";
+    }
+    else if ((computer == "steen" && player == "schaar") ||
+        (computer == "papier" && player == "steen") ||
+        (computer == "schaar" && player == "papier")) {
+        std::cout << "Computer choice: " << computer << "\n";
+        std::cout << "You lose! " << computer << " beats " << player << ".\n";
+    }
+    else {
+        std::cout << "Invalid choice! Please choose 'steen', 'papier', or 'schaar'.\n";
+    }
+
+}
+
+void playGame() {
+    char playAgain;
+    do {
+        std::string computer = randomComputerChoice();
+
+        std::string player = playerChoice();
+
+        determineWinner(player, computer);
+
+        std::cout << "Do you want to play again? (y/n): ";
+        std::cin >> playAgain;
+
+    } while (playAgain == 'y' || playAgain == 'Y');
+
+    std::cout << "Thanks for playing! Goodbye.\n";
 }
 
 int main() {
-    randomComputerChoice();
-    playerChoice();
+
+    std::srand(static_cast<unsigned>(std::time(0)));
+    playGame();
     return 0;
 }
+
