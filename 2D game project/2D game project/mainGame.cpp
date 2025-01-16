@@ -4,6 +4,7 @@
 #include <ctime>
 #include <random>
 #include <map>
+#include "Rules.h"
 
 int generateRandomNumber(int min, int max) {
     return min + (std::rand() % (max - min + 1));
@@ -33,12 +34,26 @@ void randomComputerChoice() {
 void playerChoice() {
     std::string player;
     std::map<int, std::string> choices = getChoices();
-    std::cout<<"your choice: ", std::cin >> player;
+    do {
+        std::cout << " Your choice (steen, papier, schaar): ";
+        std::cin >> player;
+
+        // Valideer de invoer met isValidChoice uit rules.cpp
+        if (isValidChoice(player)) {
+            std::cout << "Valid choice: " << player << "\n";
+            break; // Stop de loop bij een geldige keuze
+        }
+        else {
+            std::cout << " Invalid choice! Please try again.\n";
+        }
+    } while (true);
 
 }
 
 int main() {
     randomComputerChoice();
     playerChoice();
+    determineWinner(playerChoice, randomComputerChoice);
     return 0;
+
 }
