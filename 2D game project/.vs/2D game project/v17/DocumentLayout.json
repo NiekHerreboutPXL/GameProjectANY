@@ -1,0 +1,85 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Users\\snorr\\Desktop\\GameProjectANY\\2D game project\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{C43EA4B3-6921-4149-9E1A-E9F2EDC88A23}|2D game project\\2D game project.vcxproj|C:\\Users\\snorr\\Desktop\\GameProjectANY\\2D game project\\2D game project\\mainGame.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{C43EA4B3-6921-4149-9E1A-E9F2EDC88A23}|2D game project\\2D game project.vcxproj|solutionrelative:2D game project\\mainGame.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C43EA4B3-6921-4149-9E1A-E9F2EDC88A23}|2D game project\\2D game project.vcxproj|C:\\Users\\snorr\\Desktop\\GameProjectANY\\2D game project\\2D game project\\Rules.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{C43EA4B3-6921-4149-9E1A-E9F2EDC88A23}|2D game project\\2D game project.vcxproj|solutionrelative:2D game project\\Rules.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C43EA4B3-6921-4149-9E1A-E9F2EDC88A23}|2D game project\\2D game project.vcxproj|C:\\Users\\snorr\\Desktop\\GameProjectANY\\2D game project\\2D game project\\Rules.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{C43EA4B3-6921-4149-9E1A-E9F2EDC88A23}|2D game project\\2D game project.vcxproj|solutionrelative:2D game project\\Rules.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 1,
+          "Children": [
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{b1e99781-ab81-11d0-b683-00aa00a3ee26}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "mainGame.cpp",
+              "DocumentMoniker": "C:\\Users\\snorr\\Desktop\\GameProjectANY\\2D game project\\2D game project\\mainGame.cpp",
+              "RelativeDocumentMoniker": "2D game project\\mainGame.cpp",
+              "ToolTip": "C:\\Users\\snorr\\Desktop\\GameProjectANY\\2D game project\\2D game project\\mainGame.cpp*",
+              "RelativeToolTip": "2D game project\\mainGame.cpp*",
+              "ViewState": "AQIAACoAAAAAAAAAAAAAADIAAAABAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
+              "WhenOpened": "2025-01-16T20:47:12.289Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "Rules.h",
+              "DocumentMoniker": "C:\\Users\\snorr\\Desktop\\GameProjectANY\\2D game project\\2D game project\\Rules.h",
+              "RelativeDocumentMoniker": "2D game project\\Rules.h",
+              "ToolTip": "C:\\Users\\snorr\\Desktop\\GameProjectANY\\2D game project\\2D game project\\Rules.h*",
+              "RelativeToolTip": "2D game project\\Rules.h*",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAgAAAAHAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
+              "WhenOpened": "2025-01-16T20:49:24.175Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "Rules.cpp",
+              "DocumentMoniker": "C:\\Users\\snorr\\Desktop\\GameProjectANY\\2D game project\\2D game project\\Rules.cpp",
+              "RelativeDocumentMoniker": "2D game project\\Rules.cpp",
+              "ToolTip": "C:\\Users\\snorr\\Desktop\\GameProjectANY\\2D game project\\2D game project\\Rules.cpp*",
+              "RelativeToolTip": "2D game project\\Rules.cpp*",
+              "ViewState": "AQIAAAUAAAAAAAAAAAAswBQAAAASAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
+              "WhenOpened": "2025-01-16T20:47:35.203Z",
+              "EditorCaption": ""
+            }
+          ]
+        },
+        {
+          "DockedWidth": 365,
+          "SelectedChildIndex": -1,
+          "Children": [
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{34e76e81-ee4a-11d0-ae2e-00a0c90fffc3}"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
