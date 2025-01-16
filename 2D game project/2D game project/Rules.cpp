@@ -11,7 +11,6 @@ bool isValidChoice(const std::string& playerChoice) {
 }
 
 void determineWinner(const std::string& player, const std::string& computer) {
-    std::cout << "Computer choice: " << computer << "\n";
 
     if (player == computer) {
         std::cout << "It's a tie! You both chose " << player << ".\n";
@@ -19,15 +18,14 @@ void determineWinner(const std::string& player, const std::string& computer) {
     else if ((player == "steen" && computer == "schaar") ||
         (player == "papier" && computer == "steen") ||
         (player == "schaar" && computer == "papier")) {
+        std::cout << "Computer choice: " << computer << "\n";
         std::cout << "You win! " << player << " beats " << computer << ".\n";
     }
     else if ((computer == "steen" && player == "schaar") ||
         (computer == "papier" && player == "steen") ||
         (computer == "schaar" && player == "papier")) {
+        std::cout << "Computer choice: " << computer << "\n";
         std::cout << "You lose! " << computer << " beats " << player << ".\n";
-    }
-    else {
-        std::cout << "Invalid choice! Please choose 'steen', 'papier', or 'schaar'.\n";
     }
 
 }

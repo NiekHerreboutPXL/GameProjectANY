@@ -21,39 +21,44 @@ std::map<int, std::string> getChoices() {
 
 
 // logica voor computer keuze
-void randomComputerChoice() {
-
-    std::srand(static_cast<unsigned>(std::time(0)));
+std::string randomComputerChoice() {
     int randomNumber = generateRandomNumber(1, 3);
-
     std::map<int, std::string> choices = getChoices();
-
-    std::cout << "computer choice: " << choices[randomNumber] << "\n";
+    return choices[randomNumber];
+}
+// logica voor player keuze
+std::string playerChoice() {
+    std::string player;
+    std::cout << "Your choice (steen, papier, schaar): ";
+    std::cin >> player;
+    if (isValidChoice(player)) {
+    }
+    else {
+        std::cout << "Invalid choice! Try again. \n";
+    }
+    return player;
 }
 
-void playerChoice() {
-    std::string player;
-    std::map<int, std::string> choices = getChoices();
+void playGame() {
+    char playAgain;
     do {
-        std::cout << " Your choice (steen, papier, schaar): ";
-        std::cin >> player;
+        std::string computer = randomComputerChoice();
 
-        // Valideer de invoer met isValidChoice uit rules.cpp
-        if (isValidChoice(player)) {
-            std::cout << "Valid choice: " << player << "\n";
-            break; // Stop de loop bij een geldige keuze
-        }
-        else {
-            std::cout << " Invalid choice! Please try again.\n";
-        }
-    } while (true);
+        std::string player = playerChoice();
 
+        determineWinner(player, computer);
+
+        std::cout << "Do you want to play again? (y/n): ";
+        std::cin >> playAgain;
+
+    } while (playAgain == 'y' || playAgain == 'Y');
+
+    std::cout << "Thanks for playing! Goodbye.\n";
 }
 
 int main() {
-    randomComputerChoice();
-    playerChoice();
-    determineWinner(playerChoice, randomComputerChoice);
-    return 0;
 
+    std::srand(static_cast<unsigned>(std::time(0)));
+    playGame();
+    return 0;
 }
