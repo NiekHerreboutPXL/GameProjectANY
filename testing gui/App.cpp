@@ -5,6 +5,7 @@
 wxIMPLEMENT_APP(App);
 
 bool App::OnInit() {
+	wxInitAllImageHandlers();
 	MainFrame* mainFrame = new MainFrame("eerste programma C++");
 	mainFrame->Show();
 	mainFrame->SetClientSize(1080, 920);
