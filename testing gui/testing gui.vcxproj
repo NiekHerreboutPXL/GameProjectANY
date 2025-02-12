@@ -21,10 +21,12 @@
   <ItemGroup>
     <ClInclude Include="App.h" />
     <ClInclude Include="MainFrame.h" />
+    <ClInclude Include="opslag van video 1 - 7.h" />
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="App.cpp" />
     <ClCompile Include="MainFrame.cpp" />
+    <ClCompile Include="opslag van video1 -7.cpp" />
   </ItemGroup>
   <PropertyGroup Label="Globals">
     <VCProjectVersion>17.0</VCProjectVersion>
