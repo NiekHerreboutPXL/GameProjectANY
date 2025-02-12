@@ -6,7 +6,10 @@ public:
 	MainFrame(const wxString& title);
 
 private:
-	void OnButtonClicked(wxCommandEvent& evt); 
+	void OnAnyButtonClicked(wxCommandEvent& evt); 
+	void TestTest(wxCommandEvent& evt);
+	void knop2(wxCommandEvent& evt);
+	void ClosingButton(wxCloseEvent& evt);
 
 };
 
