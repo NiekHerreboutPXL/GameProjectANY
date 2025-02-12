@@ -1,4 +1,2 @@
 ﻿  MainFrame.cpp
-C:\Users\snorr\Desktop\GameProjectANY\testing gui\MainFrame.cpp(13,16): warning C4129: '.': unrecognized character escape sequence
-C:\Users\snorr\Desktop\GameProjectANY\testing gui\MainFrame.cpp(13,16): warning C4129: 'D': unrecognized character escape sequence
   testing gui.vcxproj -> C:\Users\snorr\Desktop\GameProjectANY\testing gui\x64\Debug\testing gui.exe
