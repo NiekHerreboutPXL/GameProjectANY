@@ -5,7 +5,7 @@
 //blokken in commentaarzetten door ctrl + k + c
 //blokken uit commentaar halen ctrl + k + u
 
-
+//
 MainFrame::MainFrame(const wxString& title): wxFrame(nullptr, wxID_ANY, title) {
 	wxPanel* panel = new wxPanel(this);
 	panel->SetBackgroundColour(*wxBLACK);
