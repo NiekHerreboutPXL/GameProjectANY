@@ -1,5 +1,6 @@
 #include "MainFrame.h"
 #include <wx/wx.h>
+#include <wx/image.h>
 
 //blokken in commentaarzetten door ctrl + k + c
 //blokken uit commentaar halen ctrl + k + u
@@ -8,6 +9,16 @@
 MainFrame::MainFrame(const wxString& title): wxFrame(nullptr, wxID_ANY, title) {
 	wxPanel* panel = new wxPanel(this);
 	panel->SetBackgroundColour(*wxBLACK);
+
+	wxImage image("..\..\..\Downloads\a.jpg", wxBITMAP_TYPE_JPEG);
+	if (image.IsOk()) {
+		wxBitmap bitmap(image);
+		wxBitmapButton* knopMetFoto = new wxBitmapButton(panel, wxID_ANY, bitmap, wxPoint(300, 300), wxSize(bitmap.GetWidth(), bitmap.GetHeight()));
+	}
+	else {
+		wxLogError("Afbeelding kon niet worden geladen! Controleer het pad");
+	}
+
 
 	wxButton* button1 = new wxButton(panel, wxID_ANY, "test knop1", wxPoint(200, 200), wxSize(100, 50));
 	wxButton* button2 = new wxButton(panel, wxID_ANY, "test knop2",wxPoint(100,100), wxSize(100,50));
@@ -40,7 +51,11 @@ void MainFrame::knop2(wxCommandEvent& evt) {
 
 void MainFrame::ClosingButton(wxCloseEvent& evt) {
 	wxLogStatus("je sluit het venster");
-	wxLogMessage("kijk naar de status");
+	//wxLogMessage("kijk naar de status");
 	evt.Skip();
+}
+
+void MainFrame::AfbeeldingKnop(wxCommandEvent& evt) {
+	wxLogMessage("foto knop");
 }
 

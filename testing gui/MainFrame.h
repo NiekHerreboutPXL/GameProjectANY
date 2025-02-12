@@ -10,6 +10,7 @@ private:
 	void TestTest(wxCommandEvent& evt);
 	void knop2(wxCommandEvent& evt);
 	void ClosingButton(wxCloseEvent& evt);
+	void AfbeeldingKnop(wxCommandEvent& evt);
 
 };
 
