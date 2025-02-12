@@ -6,9 +6,7 @@ public:
 	MainFrame(const wxString& title);
 
 private:
-	void OnButtonClicked(wxCommandEvent& evt);
-	void OnSliderChanged(wxCommandEvent& evt);
-	void OnTextChanged(wxCommandEvent& evt);
-	wxDECLARE_EVENT_TABLE();
+	void OnButtonClicked(wxCommandEvent& evt); 
+
 };
 
