@@ -24,6 +24,12 @@
     <ClInclude Include="StageTwoFrame.h">
       <Filter>Header Files</Filter>
     </ClInclude>
+    <ClInclude Include="StageThreeFrame.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="BackgroundPanel.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="MainFrame.cpp">
@@ -33,6 +39,12 @@
       <Filter>Source Files</Filter>
     </ClCompile>
     <ClCompile Include="StageTwoFrame.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="StageThreeFrame.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="BackgroundPanel.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
   </ItemGroup>
