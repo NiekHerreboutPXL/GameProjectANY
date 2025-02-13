@@ -1,0 +1,14 @@
+#pragma once
+#include <wx/wx.h>
+
+class ExtraFrame;
+
+
+class MainFrame :public wxFrame
+{
+public:
+	MainFrame(const wxString& title);
+private:
+	void NewFrameButton(wxCommandEvent& evt);
+};
+
