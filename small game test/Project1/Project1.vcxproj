@@ -137,12 +137,16 @@
   </ItemDefinitionGroup>
   <ItemGroup>
     <ClInclude Include="App.h" />
+    <ClInclude Include="BackgroundPanel.h" />
     <ClInclude Include="MainFrame.h" />
+    <ClInclude Include="StageThreeFrame.h" />
     <ClInclude Include="StageTwoFrame.h" />
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="App.cpp" />
+    <ClCompile Include="BackgroundPanel.cpp" />
     <ClCompile Include="MainFrame.cpp" />
+    <ClCompile Include="StageThreeFrame.cpp" />
     <ClCompile Include="StageTwoFrame.cpp" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
