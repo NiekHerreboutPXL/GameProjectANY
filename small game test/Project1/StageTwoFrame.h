@@ -5,4 +5,11 @@
 class StageTwoFrame : public wxFrame {
 public:
     StageTwoFrame(const wxString& title); 
+private:
+	wxBitmap backgroundImage;
+	wxPanel* panel; 
+	wxButton* praatKnop;
+	void OnPaint(wxPaintEvent& evt);
+	void OnPositionClick(wxMouseEvent& evt);
+
 };
