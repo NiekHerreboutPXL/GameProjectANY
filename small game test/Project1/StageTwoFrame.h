@@ -1,5 +1,6 @@
 #pragma once
 #include <wx/dcbuffer.h>
+#include <iostream>
 #include <string>
 #include <wx/wx.h>
 
@@ -13,7 +14,7 @@ private:
 
 	void OnPaint(wxPaintEvent& evt);
 	void OnButtonClick(wxCommandEvent& evt);
-	std::string RandomZin();
+	void RandomZin();
 
 };
 

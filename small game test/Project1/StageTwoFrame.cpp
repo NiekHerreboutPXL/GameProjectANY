@@ -18,6 +18,8 @@ StageTwoFrame::StageTwoFrame(const wxString& title) : wxFrame(nullptr, wxID_ANY,
 	panel->Bind(wxEVT_PAINT, &StageTwoFrame::OnPaint, this);
 
     praatKnop = new wxButton(panel, wxID_ANY, "Press to Talk", wxPoint(500,300), wxSize(150, 50));
+
+    praatKnop->Bind(wxEVT_BUTTON, &StageTwoFrame::OnButtonClick, this);
 }
 
 
@@ -32,10 +34,10 @@ void StageTwoFrame::OnPaint(wxPaintEvent& evt) {
 }
 
 void StageTwoFrame::OnButtonClick(wxCommandEvent& evt) {
-
+    RandomZin();
 }
 
-std::string StageTwoFrame::RandomZin() {
+void StageTwoFrame::RandomZin() {
     std::list<std::string> zinnen = {
         "Ahmed zei dat hij zou coderen, maar hij zit weer op TikTok.",
         "De enige code die Ahmed schrijft, zijn cheats voor games.",
@@ -48,7 +50,10 @@ std::string StageTwoFrame::RandomZin() {
         "Zijn code werkt… totdat je het runt.",
         "Als Ahmed zijn code ziet, zegt zelfs ChatGPT: 'Ik geef het op'."
     };
-    
+    int indexNummer = rand() % zinnen.size();
+    wxString bericht = wxString::Format("%d", indexNummer);
+    std::string gekozenZin = *std::next(zinnen.begin(), indexNummer);
+    wxMessageBox(gekozenZin);
 }
 
 
