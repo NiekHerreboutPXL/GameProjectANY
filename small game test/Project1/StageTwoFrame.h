@@ -1,5 +1,7 @@
 #pragma once
 #include <wx/dcbuffer.h>
+#include <iostream>
+#include <string>
 #include <wx/wx.h>
 
 class StageTwoFrame : public wxFrame {
@@ -9,7 +11,10 @@ private:
 	wxBitmap backgroundImage;
 	wxPanel* panel; 
 	wxButton* praatKnop;
+
 	void OnPaint(wxPaintEvent& evt);
-	void OnPositionClick(wxMouseEvent& evt);
+	void OnButtonClick(wxCommandEvent& evt);
+	void RandomZin();
 
 };
+
