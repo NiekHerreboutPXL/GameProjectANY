@@ -23,6 +23,8 @@ void BackgroundPanel::OnPaint(wxPaintEvent& evt) {
 void BackgroundPanel::OnPositionClick(wxMouseEvent& evt) {
     wxPoint clickPos = evt.GetPosition();
 
+
+
     int doorX1 = 520, doorY1 = 500;
     int doorX2 = 695, doorY2 = 770;
 
@@ -32,6 +34,8 @@ void BackgroundPanel::OnPositionClick(wxMouseEvent& evt) {
         wxMessageBox("Je hebt op de deur geklikt!", "Info", wxOK | wxICON_INFORMATION);
 
         StageTwoFrame* tweedeFrame = new StageTwoFrame("Stage 2");
+        tweedeFrame->SetSize(1080, 920);
+        tweedeFrame->Center();
         tweedeFrame->Show();
 
         wxWindow* parent = GetParent();
@@ -41,3 +45,4 @@ void BackgroundPanel::OnPositionClick(wxMouseEvent& evt) {
         }
     }
 }
+
